@@ -45,7 +45,7 @@ const createProject = (event: FormEvent<HTMLFormElement>) => {
 
     
     return (
-      <section>
+      <section className="add-project">
         <h2>Send a message</h2>
         <form onSubmit={newMessage}>
             <label htmlFor="name">

@@ -7,13 +7,6 @@
     "created": "2024-29-4"
   },
   {
-    "id": "46375e7d-36d2-42b5-9b87-36c5ccfd3085",
-    "title": "Python",
-    "description": "Innføring i programmering",
-    "category": "Programming",
-    "created": "2024-29-4"
-  },
-  {
     "id": "46685e7d-36c2-42b5-9b87-36c3ecfd3085",
     "title": "Java",
     "description": "Objectorientert programmering",
@@ -21,10 +14,10 @@
     "created": "2024-29-4"
   },
   {
-    "id": "76c419c7-4f06-4ea0-b6ea-2df92c158e2a",
-    "title": "Test",
-    "description": "asdfsadfsas",
-    "category": "JavaScript",
-    "created": "2024-10-17T19:02:10.415Z"
+    "id": "b0e5380b-ee0a-4ff1-8727-e4275a7c2a1c",
+    "title": "Framework and .NET",
+    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+    "category": "Programming",
+    "created": "2024-10-17T22:12:55.668Z"
   }
 ]

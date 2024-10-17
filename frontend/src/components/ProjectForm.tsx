@@ -21,7 +21,7 @@ export default function ProjectForm(props: CreateProjectFormProps){
   };
 
     return (
-      <section>
+      <section className="add-project">
         <h2>Add new project</h2>
         <form onSubmit={createNewProject} className="project-form">
          

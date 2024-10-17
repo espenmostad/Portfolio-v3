@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { ofetch } from "ofetch";
 import Projects from "./src/components/Projects";
 import ProjectForm from "./src/components/ProjectForm";
+import Presentation from "./src/components/Presentation";
 
 const student = 'Halgeir Geirson'
 const degree = 'Bachelor IT'
@@ -88,25 +89,28 @@ function App() {
     };
 
   return (
-    <div>
+    <div className="grid-container">
       <Header student={student} degree={degree} points={points} email={email} />
-      <Experiences experiences={experiences}>				
-			</Experiences>
-      <Contact email={email} />
-      <Projects
-				projects={projectsList}
-				onRemoveProjectButtonClicked={
-					handleOnRemoveProjectButtonClicked
-				}
-			>
-			</Projects>
-      <ProjectForm
-				onCreateNewProjectButtonClicked={
-					handleOnCreateNewProjectButtonClicked
-				}
-			/>
-      <ContactForm />
-
+      <main>
+        <Presentation student={student} degree={degree} points={points} email={email} experiences={undefined} />
+        <Experiences experiences={experiences}>				
+        </Experiences>
+        
+        <Projects
+          projects={projectsList}
+          onRemoveProjectButtonClicked={
+            handleOnRemoveProjectButtonClicked
+          }
+        >
+        </Projects>
+        <ProjectForm
+          onCreateNewProjectButtonClicked={
+            handleOnCreateNewProjectButtonClicked
+          }
+        />
+        <ContactForm />
+      
+      </main>
     </div>
   )
 }

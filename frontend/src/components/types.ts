@@ -1,3 +1,4 @@
+import { Key } from "react";
 import { z } from "zod";
 
 // Definerer et Zod-skjema for Habit
@@ -25,6 +26,8 @@ export type ExperienceProps = {
 }
 
 export type ExperiencesProps = {
+  description: string;
+  id: Key | null | undefined;
   experiences : ExperienceProps[];
 }
 
