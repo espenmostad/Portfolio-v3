@@ -1,0 +1,30 @@
+[
+  {
+    "id": "46685e7d-36c2-42b5-9b87-36c5ccfd3085",
+    "title": "SQL",
+    "description": "My first database project",
+    "category": "Databases",
+    "created": "2024-29-4"
+  },
+  {
+    "id": "46375e7d-36d2-42b5-9b87-36c5ccfd3085",
+    "title": "Python",
+    "description": "Innføring i programmering",
+    "category": "Programming",
+    "created": "2024-29-4"
+  },
+  {
+    "id": "46685e7d-36c2-42b5-9b87-36c3ecfd3085",
+    "title": "Java",
+    "description": "Objectorientert programmering",
+    "category": "Programming",
+    "created": "2024-29-4"
+  },
+  {
+    "id": "76c419c7-4f06-4ea0-b6ea-2df92c158e2a",
+    "title": "Test",
+    "description": "asdfsadfsas",
+    "category": "JavaScript",
+    "created": "2024-10-17T19:02:10.415Z"
+  }
+]
