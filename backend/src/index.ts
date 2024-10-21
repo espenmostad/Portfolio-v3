@@ -1,5 +1,6 @@
 import { serve } from '@hono/node-server'
 import { readFile, writeFile } from "node:fs/promises";
+import { port } from "../config/config";
 import { Hono } from 'hono'
 import { cors } from 'hono/cors';
 import { UUID } from 'node:crypto';
@@ -20,14 +21,14 @@ app.get('/', (c) => {
   return c.text('Hello Hono!')
 })
 
-app.get("/projects", async (c: { json: (arg0: any) => any; }) => {
+app.get("/v1/projects", async (c: { json: (arg0: any) => any; }) => {
   const data = await readFile("./src/data.json", "utf-8");
   //return c.json(data);
   return c.json(JSON.parse(data));
   //return c.json({"id": 1});
 });
 
-app.put("/projects", async (c) => {
+app.put("/v1/projects", async (c) => {
 	const data = await readFile("./src/data.json", "utf-8");
 	const projects = JSON.parse(data);
 	const project = await c.req.json() as Project;
@@ -42,7 +43,7 @@ app.put("/projects", async (c) => {
 	
 });
 
-app.delete("/projects/:id", async (c) => {
+app.delete("/v1/projects/:id", async (c) => {
 	const id = c.req.param("id");
 	const data = await readFile("./src/data.json", "utf-8");
 	const projects = JSON.parse(data) as Project[];
@@ -58,7 +59,7 @@ app.delete("/projects/:id", async (c) => {
 	return c.json({ message: "Project deleted" });
 });
 
-const port = 3000
+
 console.log(`Server is running on port ${port}`)
 
 serve({

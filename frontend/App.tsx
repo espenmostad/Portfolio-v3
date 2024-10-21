@@ -9,6 +9,7 @@ import { ofetch } from "ofetch";
 import Projects from "./src/components/Projects";
 import ProjectForm from "./src/components/ProjectForm";
 import Presentation from "./src/components/Presentation";
+import { useProjects } from "./src/hooks/useProjects";
 
 const student = 'Halgeir Geirson'
 const degree = 'Bachelor IT'
@@ -22,23 +23,24 @@ const email = 'student@hiof.no'
 
 function App() {
   console.log("Email in App:", email);  // Debug log
-  const [projectsList, setProjectsList] = useState<ProjectProps[]>([]);
+  //const [projectsList, setProjectsList] = useState<ProjectProps[]>([]);
+  const { projectsList, handleOnCreateProjectButtonClicked } = useProjects();
 
-  const readDataFromApi = () => {
-		console.log("fetching data");
-		ofetch("http://localhost:3000/projects")
-			.then((projects: ProjectProps[]) => {
-				console.log("data fetched");
-				setProjectsList(projects);
-				console.log("data initialized");
-			})
-			.catch((error) => {
-				console.error("Error fetching projects:", error);
-			});
-	};
-	useEffect(() => {
-		readDataFromApi();
-	}, []);
+  // const readDataFromApi = () => {
+	// 	console.log("fetching data");
+	// 	ofetch("http://localhost:3000/projects")
+	// 		.then((projects: ProjectProps[]) => {
+	// 			console.log("data fetched");
+	// 			setProjectsList(projects);
+	// 			console.log("data initialized");
+	// 		})
+	// 		.catch((error) => {
+	// 			console.error("Error fetching projects:", error);
+	// 		});
+	// };
+	// useEffect(() => {
+	// 	readDataFromApi();
+	// }, []);
 
 
   const handleOnCreateNewProjectButtonClicked = async (
