@@ -1,9 +1,10 @@
 import { serve } from '@hono/node-server'
 import { readFile, writeFile } from "node:fs/promises";
-import { port } from "../config/config";
+import { port } from "./config/config";
 import { Hono } from 'hono'
 import { cors } from 'hono/cors';
 import { UUID } from 'node:crypto';
+import { env} from './src/lib';
 
 type Project = {
 	id: UUID;
