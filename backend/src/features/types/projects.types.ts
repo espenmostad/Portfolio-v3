@@ -18,3 +18,7 @@ export type Failure<T> =
         message: string;
     };
     };
+
+    export type Result<T> =
+    | Success<T>
+    | Failure<T>;

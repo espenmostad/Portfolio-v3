@@ -1,8 +1,8 @@
 import { Hono } from "hono";
-import { projectService, ProjectService } from "../service";
-import { Project } from "../types";
+import { projectService, ProjectService } from "../services";
+import { Project } from "../types/projects.types";
 import { UUID } from "crypto";
-import { projectSchema } from "../lib/validate";
+import { projectSchema } from "../../lib/validate";
 
 
 // Function to create a project controller

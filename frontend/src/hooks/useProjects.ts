@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { ProjectProps } from "../components/types";
-import { createProject, deleteProject, getProjects } from "../services/services";
+import { createProject, deleteProject, getProjects } from "../services";
 
 
 
