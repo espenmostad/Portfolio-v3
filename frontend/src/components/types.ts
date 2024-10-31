@@ -35,6 +35,9 @@ export type ProjectProps = {
   id: string;
   title: string;
   description: string;
+  url: string;
   category: string;
+  isPublic: boolean;
   createdAt?: Date;
+  publishedAt?: Date;
 }

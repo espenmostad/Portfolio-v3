@@ -7,6 +7,7 @@ const url = endpoints.projects;
 export const getProjects = async (): Promise<ProjectProps[]> => {
     const projects = await ofetch(url);
 
+    console.log(url);
     console.log(projects);
     //Validating the projects
     //projectsSchema.parse(projects);

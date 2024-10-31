@@ -103,8 +103,17 @@
     padding: 10px 20px;
     border-radius: 10px;
   }
+
+  .white-bg{
+    background-color: var(--article-bgcolor);
+    margin: 20px 20px
+  }
   
   .projects h2{
+    width: 100%;
+  }
+
+  .projects h3{
     width: 100%;
   }
   .projects{

@@ -7,7 +7,7 @@ import { ExperiencesProps } from "./types";
   export default function Experiences(props: Readonly<PropsWithChildren<ExperiencesProps>>) {
     const { experiences, children } = props;
     return (
-      <section>
+      <section className="white-bg">
         <h2>My experiences:</h2>
         {children}
         {experiences.length === 0 ? (

@@ -15,8 +15,9 @@ type HeaderProps = {
     console.log("Email in Header:", email);  // Debug log
   
     return (
-    <section>
-        <h2>{student}</h2> <p>{degree} - {points} credits</p>
+    <section className="white-bg">
+        <h2>{student}</h2> 
+        <p>{degree} - {points} credits</p>
     </section>
       );
   }

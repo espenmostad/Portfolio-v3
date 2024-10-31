@@ -12,7 +12,7 @@ export const env = createEnv({
       .enum(["development", "test", "production"])
       .default("development"),
     FRONTEND_URL: z.coerce.string(),
-    PORT: z.coerce.number().default(3999),
+    PORT: z.coerce.number().default(3000),
     DATABASE_URL: z.string().endsWith(".db"),
   },
   runtimeEnv: process.env, // Bruker process.env som kilde for miljøvariabler (default i node for å hente ut miljøvariabler fra .env)
